@@ -6,8 +6,8 @@ button{
     width: 80px;
 }
 button:hover{
-    border-radius: 20px;
-    transition: .75s;
+    border-radius: 30px;
+    transition: .000000005s;
     
 }
 body{

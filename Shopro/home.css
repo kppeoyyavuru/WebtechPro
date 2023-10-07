@@ -291,12 +291,14 @@
 .Headphones{
     background-image: url(headphones.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     width: 320px;
     height:280px;
-    align-items: center;
+    align-items:self-end;
     border: 4px solid black;
     background-color: white;
+    font-weight: 700;
+    font-size:x-large;
 }
 
 .Laptops
@@ -309,18 +311,22 @@
     border: 4px solid black;
     background-position: center;
     background-color: white;
-    
+    font-weight: 700;
+    font-size:x-large;    
 }
 
 .Televisions
 {
-    background-image: url(tv.jpeg);
+    background-image: url(tv.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 320px;
     height:280px;
     border: 4px solid black;
     background-color: white;
+    background-position: center;
+    font-weight: 700;
+    font-size:x-large;
 }
 
 .Mobiles{
@@ -332,6 +338,8 @@
     height:280px;
     border: 4px solid black;
     background-color: white;
+    font-weight: 700;
+    font-size:x-large;
 }
 .footer{
     display: flex;

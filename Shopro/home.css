@@ -10,6 +10,7 @@
     color:rgb(201, 202, 217);
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 
 }
 .nav-logo{
@@ -49,15 +50,16 @@
     font-size:1.6rem ;
     align-items: center;
     margin-top: 15px;
+    font-weight: 1000;
     
 }
 .nav-search{
     display: flex;
-    width: 1320px;
+    width: 920px;
     height: 40px;
     border-radius: 3px;
     justify-content: space-evenly;
-    margin-left:70px
+    margin-left:25px
 }
 .nav-search:hover{
     border:2px solid rgb(157, 198, 233);
@@ -91,10 +93,11 @@
     width:100%;
     font-size: 1rem;
     border: none;
+    font-weight: 400;
 }
 .nav-signin
 {
- margin-left: 10px;
+ margin-left:5px;
  font-size: 1rem;
  font-weight: 700;
  margin: 50px;
@@ -116,6 +119,234 @@
     font-size: 30px;
 }
 .nav-cart{
-    margin-left: 70px;
+    margin-left: 25px;
     font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.panel{
+    height: 45px;
+    background-color: rgb(6, 84, 151);
+    color:rgb(201, 202, 217);
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.panel-options
+{
+    display: flex;
+}
+
+.help-text{
+    width: 44px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    font-weight: 300;
+    margin-left: 10px;
+    border: none;
+    background-color:rgb(6, 84, 151);
+    color: white ;
+}
+
+
+.info{
+    margin-left:850px; margin-top:5px;
+    font-weight: 550;
+}
+.menu{
+    margin-left:1px
+}
+
+.pborder{
+    border: 2px solid transparent;
+}
+
+.pborder:hover{
+    border: 2px solid rgb(214, 215, 229);
+}
+
+.panel-all:hover{
+    color:rgb(15, 3, 52);
+}
+
+
+
+.continue-option1
+{
+    background-color: rgb(157, 198, 233);
+    width: 200px;
+    border: 3px solid rgb(8, 3, 80);
+    border-color: rgb(8, 3, 80);
+    padding:20px;
+    margin: 10px;
+    position:relative;
+    top: 100px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.continue-option2
+{
+    background-color: rgb(157, 198, 233);
+    width: 200px;
+    border: 3px solid rgb(8, 3, 80);
+    border-color: rgb(8, 3, 80);
+    padding:20px;
+    margin: 10px;
+    position:relative;
+    top: 100px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.continue-option3
+{
+    background-color: rgb(157, 198, 233);
+    width: 200px;
+    border: 3px solid rgb(8, 3, 80);
+    border-color: rgb(8, 3, 80);
+    padding:20px;
+    margin: 10px;
+    position:relative;
+    top: 100px;
+    left: 500px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius:10px;
+    font-weight: bold;
+    font-style: inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.register
+{
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid rgb(8, 3, 80);
+}
+.register:hover{
+    border-color: rgb(61, 55, 240);
+}
+
+.login:hover{
+    border-color: rgb(61, 55, 240);
+}
+
+.login
+{
+    font-weight: 700;
+    border-radius: 4px;
+    border: 2px solid rgb(8, 3, 80);
+    
+}
+
+.list{
+    width: 300px;
+    font-size: larger;
+    font-weight: 700;
+    color: rgb(4, 4, 86);
+    margin-left: 20px;
+    margin-top:40px;
+    font-style: oblique;
+    
+}
+
+.list :hover{
+    background-color: rgb(157, 198, 233);
+    border: 8px solid rgb(157, 198, 233);
+}
+.horizontal{
+    display: flex;
+}
+.middle{
+    margin-top: 25px;
+}
+.middler
+{
+    display: flex;
+    width: 1450px;
+    height:300px;
+    background-color: rgb(6, 84, 151);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Headphones{
+    background-image: url(headphones.jpeg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 320px;
+    height:280px;
+    align-items:self-end;
+    border: 4px solid black;
+    background-color: white;
+    font-weight: 700;
+    font-size:x-large;
+}
+
+.Laptops
+{
+    background-image: url(laptops.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 320px;
+    height:280px;
+    border: 4px solid black;
+    background-position: center;
+    background-color: white;
+    font-weight: 700;
+    font-size:x-large;    
+}
+
+.Televisions
+{
+    background-image: url(tv.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 320px;
+    height:280px;
+    border: 4px solid black;
+    background-color: white;
+    background-position: center;
+    font-weight: 700;
+    font-size:x-large;
+}
+
+.Mobiles{
+    background-image: url(mobiles.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 320px;
+    height:280px;
+    border: 4px solid black;
+    background-color: white;
+    font-weight: 700;
+    font-size:x-large;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    background-color: rgb(211, 211, 211);
+    
+}
+
+.textfoot{
+    font-style: oblique;
 }

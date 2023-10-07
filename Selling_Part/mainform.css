@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation:  gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    } 100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 4%;
+}
+.bro{
+    margin-top: 7px;
+}
+
+.success{
+    width: 8rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: darkgreen;
+    color: white;
+}
+.clear{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 20px;
+    font-weight: bold;
+}

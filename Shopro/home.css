@@ -175,7 +175,7 @@
 
 .continue-option1
 {
-    background-color:rgb(71, 119, 233);
+    background-color: rgb(157, 198, 233);
     width: 200px;
     border: 3px solid rgb(8, 3, 80);
     border-color: rgb(8, 3, 80);
@@ -195,7 +195,7 @@
 
 .continue-option2
 {
-    background-color: rgb(98, 157, 251);
+    background-color: rgb(157, 198, 233);
     width: 200px;
     border: 3px solid rgb(8, 3, 80);
     border-color: rgb(8, 3, 80);
@@ -215,7 +215,7 @@
 
 .continue-option3
 {
-    background-color: rgb(115, 175, 253);
+    background-color: rgb(157, 198, 233);
     width: 200px;
     border: 3px solid rgb(8, 3, 80);
     border-color: rgb(8, 3, 80);
@@ -235,7 +235,6 @@
 
 .register
 {
-    background-color: rgba(35, 85, 222, 0.884);
     font-weight: 700;
     border-radius: 5px;
     border: 2px solid rgb(8, 3, 80);
@@ -250,7 +249,6 @@
 
 .login
 {
-    background-color: rgba(63, 103, 212, 0.884);
     font-weight: 700;
     border-radius: 4px;
     border: 2px solid rgb(8, 3, 80);
@@ -283,7 +281,7 @@
     display: flex;
     width: 1450px;
     height:300px;
-    background-color: rgb(192, 212, 243);
+    background-color: rgb(6, 84, 151);
     align-items: center;
     justify-content: space-evenly;
 }

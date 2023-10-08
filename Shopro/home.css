@@ -126,11 +126,12 @@
 
 .panel{
     height: 45px;
-    background-color: rgb(6, 84, 151);
-    color:rgb(201, 202, 217);
+    background-color: rgb(157, 198, 233);
+    color: rgb(9, 2, 58);
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    font-weight: 400;
 }
 .panel-options
 {
@@ -146,8 +147,9 @@
     font-weight: 300;
     margin-left: 10px;
     border: none;
-    background-color:rgb(6, 84, 151);
-    color: white ;
+    font-weight: 400;
+    background-color: rgb(157, 198, 233);
+    color:  rgb(9, 2, 58); ;
 }
 
 
@@ -281,7 +283,7 @@
     display: flex;
     width: 1450px;
     height:300px;
-    background-color: rgb(6, 84, 151);
+    background-color: rgb(157, 198, 233);
     align-items: center;
     justify-content: space-evenly;
 }
@@ -297,6 +299,9 @@
     background-color: white;
     font-weight: 700;
     font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
 }
 
 .Laptops
@@ -310,7 +315,10 @@
     background-position: center;
     background-color: white;
     font-weight: 700;
-    font-size:x-large;    
+    font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;    
 }
 
 .Televisions
@@ -325,6 +333,9 @@
     background-position: center;
     font-weight: 700;
     font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
 }
 
 .Mobiles{
@@ -338,12 +349,19 @@
     background-color: white;
     font-weight: 700;
     font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
 }
 .footer{
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
     background-color: rgb(211, 211, 211);
+    height:200px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
     
 }
 

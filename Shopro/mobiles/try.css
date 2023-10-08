@@ -1,0 +1,8 @@
+.bg{
+    background-color: rgb(199, 221, 244);
+    justify-content: space-evenly;
+}
+img{
+    height: 400px;
+    width: 400px;
+}

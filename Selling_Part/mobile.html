@@ -1,12 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello Mobile</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Your Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="mainform.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="hh">
+            <h1>Add Mobile Details</h1>
+        </div>
+        <form class="col-md-12">
+            <div class="mb-3">
+                <label class="form-check-label" for="exampleCheck1">Manufacturing Company</label>
+                <select class="bro form-select" aria-label="Default select example" id="sel">
+                    <option selected>Select Mobile Company</option>
+                    <option value="1">Apple</option>
+                    <option value="2">Samsung</option>
+                    <option value="3">Vivo</option>
+                    <option value="4">Poco</option>
+                    <option value="5">Oppo</option>
+                    <option value="6">Redmi</option>
+                    <option value="7">MI</option>
+                    <option value="8">Motorola</option>
+                    <option value="9">IQOO</option>
+                    <option value="10">OnePlus</option>
+                    <option value="11">Nothing</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">How old Is you Device (In Years) ?</label>
+                <input id="prs" type="number" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">IMEI Number</label>
+                <input id="prs" type="number" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="form-check">
+                <input id="agree" type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                <label class="form-check-label" for="exampleCheck1">Have Box, Charger and Bill</label>
+            </div>
+            <br>
+            <button type="reset" class="clear btn btn-warning">Clear</button> 
+        </form>
+        <input id="sub" class="success" type="submit" value="Next">
+        <!-- <button class="success btn btn-danger" id="sub">Next <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg> </button> -->
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>

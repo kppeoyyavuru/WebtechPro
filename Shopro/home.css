@@ -6,7 +6,7 @@
 
 .navbar{
     height: 60px;
-    background-color: rgb(9, 2, 58);
+    background-color: #250a32;
     color:rgb(201, 202, 217);
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .border:hover{
-    border: 2px solid rgb(214, 215, 229);
+    border: 2px solid rgb(47, 3, 58);
 }
 .add-icon{
     display: flex ;
@@ -62,7 +62,7 @@
     margin-left:25px
 }
 .nav-search:hover{
-    border:2px solid rgb(157, 198, 233);
+    border:2px solid rgb(40, 2, 42);
 }
 .search-select
 {
@@ -80,11 +80,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(157, 198, 233);
+    background-color: rgb(8, 4, 11);
     size: 1.2rem;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    color:black
+    color:rgb(242, 234, 234)
     
 
 }
@@ -126,11 +126,12 @@
 
 .panel{
     height: 45px;
-    background-color: rgb(6, 84, 151);
-    color:rgb(201, 202, 217);
+    background-color: rgb(90, 25, 98);
+    color: rgb(246, 239, 246);
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    font-weight: 400;
 }
 .panel-options
 {
@@ -146,8 +147,9 @@
     font-weight: 300;
     margin-left: 10px;
     border: none;
-    background-color:rgb(6, 84, 151);
-    color: white ;
+    font-weight: 400;
+    background-color: rgb(90, 25, 98);
+    color: rgb(246, 239, 246);
 }
 
 
@@ -164,66 +166,70 @@
 }
 
 .pborder:hover{
-    border: 2px solid rgb(214, 215, 229);
+    border: 2px solid rgb(221, 162, 236);
 }
 
 .panel-all:hover{
-    color:rgb(15, 3, 52);
+    color:white;
 }
 
 
 
 .continue-option1
 {
-    background-color: rgb(157, 198, 233);
+    background-color: rgb(88, 41, 106);
     width: 200px;
-    border: 3px solid rgb(8, 3, 80);
-    border-color: rgb(8, 3, 80);
+    border: 3px solid rgb(72, 7, 75);
+    border-color: rgb(240, 239, 247);
     padding:20px;
     margin: 10px;
     position:relative;
-    top: 100px;
-    left: 500px;
+    top: 70px;
+    left: 400px;
     transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
     font-style: inherit;
+    color: rgb(11, 3, 3);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration-skip: 20px;
     
 }
 
 .continue-option2
 {
-    background-color: rgb(157, 198, 233);
+    background-color: rgb(88, 41, 106);
     width: 200px;
-    border: 3px solid rgb(8, 3, 80);
-    border-color: rgb(8, 3, 80);
+    border: 3px solid rgb(72, 7, 75);
+    border-color: rgb(240, 239, 247);
     padding:20px;
     margin: 10px;
     position:relative;
-    top: 100px;
-    left: 500px;
+    top: 70px;
+    left: 400px;
     transform: translate(-50%, -50%);
     text-align: center;
     border-radius: 10px;
     font-weight: bold;
     font-style: inherit;
+    color: rgb(14, 5, 5);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
 
 .continue-option3
 {
-    background-color: rgb(157, 198, 233);
+    background-color: rgb(88, 41, 106);
     width: 200px;
-    border: 3px solid rgb(8, 3, 80);
-    border-color: rgb(8, 3, 80);
+    border: 3px solid rgb(72, 7, 75);
+    border-color: rgb(240, 239, 247);
+    color: rgb(15, 4, 4);
     padding:20px;
     margin: 10px;
     position:relative;
-    top: 100px;
-    left: 500px;
+    top: 70px;
+    left: 400px;
     transform: translate(-50%, -50%);
     text-align: center;
     border-radius:10px;
@@ -237,21 +243,21 @@
 {
     font-weight: 700;
     border-radius: 5px;
-    border: 2px solid rgb(8, 3, 80);
+    border: 2px solid rgb(157, 108, 162);
 }
 .register:hover{
-    border-color: rgb(61, 55, 240);
+    border-color: rgb(157, 130, 160);
 }
 
 .login:hover{
-    border-color: rgb(61, 55, 240);
+    border-color:  rgb(157, 130, 160);
 }
 
 .login
 {
     font-weight: 700;
     border-radius: 4px;
-    border: 2px solid rgb(8, 3, 80);
+    border-color:  rgb(157, 130, 160);
     
 }
 
@@ -259,19 +265,32 @@
     width: 300px;
     font-size: larger;
     font-weight: 700;
-    color: rgb(4, 4, 86);
+    color: rgb(52, 1, 57);
     margin-left: 20px;
     margin-top:40px;
-    font-style: oblique;
+    font-style: oblique;   
     
 }
 
+a{
+    text-decoration: none;
+}
+
+.br{
+    width: 300px;
+    font-size: larger;
+    font-weight: 1400;
+    color: rgb(60, 14, 67);
+    margin: 20px;
+    font-style: oblique;    
+}
 .list :hover{
-    background-color: rgb(157, 198, 233);
-    border: 8px solid rgb(157, 198, 233);
+    color: rgb(194, 164, 194);
 }
 .horizontal{
     display: flex;
+    padding: 20px;
+    margin: 10px;
 }
 .middle{
     margin-top: 25px;
@@ -281,7 +300,7 @@
     display: flex;
     width: 1450px;
     height:300px;
-    background-color: rgb(6, 84, 151);
+    background-color: rgb(88, 41, 106);
     align-items: center;
     justify-content: space-evenly;
 }
@@ -297,6 +316,10 @@
     background-color: white;
     font-weight: 700;
     font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
+
 }
 
 .Laptops
@@ -310,7 +333,10 @@
     background-position: center;
     background-color: white;
     font-weight: 700;
-    font-size:x-large;    
+    font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;    
 }
 
 .Televisions
@@ -325,6 +351,9 @@
     background-position: center;
     font-weight: 700;
     font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
 }
 
 .Mobiles{
@@ -338,12 +367,20 @@
     background-color: white;
     font-weight: 700;
     font-size:x-large;
+    border-radius: 30px;
+    text-align: center;
+    text-shadow:20px;
 }
 .footer{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 60px;
+    margin-top: 80px;
     background-color: rgb(211, 211, 211);
+    height:200px;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+
     
 }
 

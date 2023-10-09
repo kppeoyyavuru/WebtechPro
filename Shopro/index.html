@@ -1,19 +1,102 @@
-<html>
-    <head>
-        <title>ShoPro-Login page</title>
-        <link rel="stylesheet" href="shopro.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Electronics Store</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="shop.avif" alt="logo" class="logo1" height="40px" width="60px">
+                <a href="#">SHOPro</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Rest of your website content goes here -->
+
+    <script src="script.js"></script>
+
+    
+    <main>
+        <aside class="sub-nav">
+            <h2>Categories</h2>
+            <ul class="category-list">
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </aside>
+        <section class="product-list">
+            <article class="product-card">
+                <img src="iphone12.jpeg" alt="Product 1" height="100px" width="100px">
+                <h2>Iphone 12</h2>
+                <p>Description of Product 1.</p>
+                <p>Price: 41,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+            
+            
+            <article class="product-card">
+                <img src="s23.webp" alt="Product 2" height="100px" width="100px">
+                <h2>Samsung S23</h2>
+                <p>Description of Product 3.</p>
+                <p>Price: 79990</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="X13pro.jpeg" alt="Product 2" height="100px" width="100px">
+                <h2>Xiomi 13 Pro</h2>
+                <p>Description of Product 3.</p>
+                <p>Price: 75,999</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="product2.jpg" alt="Product 2" height="100px" width="100px">
+                <h2>Product 5</h2>
+                <p>Description of Product 3.</p>
+                <p>Price: $150</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+            
+            <!-- Add more product cards as needed -->
+        </section>
         
-    </head>
-    <body>
-        <div>
-            <h1 color: rgb(19, 2, 2);">Welcome to ShoPro</h1>
-            <input style="border:none;outline:none;background:none;border-bottom:1px solid black" type="text" placeholder="               NAME"><br><br>
-            <input style="border:none;outline:none;background:none;border-bottom:1px solid black" type="email" placeholder="         name@gmail.com"><br><br>
-            <input style="border:none;outline:none;background:none;border-bottom:1px solid black" type="password" name="" id="" placeholder="               Password"><br><br>
-            <button>Sign up</button><hr>
-            <p>By creating an account,you agree and accept to our terms and privacy policy</p><hr>
-            <p>Already have an account?<a href="">Log in</a></p>
-        </div>
-        
-    </body>
-</html> 
+        <aside class="cart">
+            <h2>Product Description</h2>
+            <article class="product-card">
+                <img src="Iphone.jpeg" alt="" height="300px" width="300px" >
+                <h2>Iphone 14 Pro Max</h2>
+                <p>Price: 1,89,900 </p>
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="">Price History</button>
+
+
+
+                
+
+            </article>
+            <iframe src="https://pricehistoryapp.com/embed/iphone-14-pro-max-1tb-deep-purple" width="100%" height="500" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+        </aside>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

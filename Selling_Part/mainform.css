@@ -40,8 +40,8 @@ body{
     width: 8rem;
     height: 3rem;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 4em;
+    right: 5rem;
     border-radius: 20px;
     font-weight: bold;
     background-color: darkgreen;

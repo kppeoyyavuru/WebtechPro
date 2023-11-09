@@ -1,0 +1,202 @@
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<title>AMZ DAta</title>
+    <link rel="stylesheet" href="styles.css"> 
+
+    <title>URL Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+
+	<!-- INCLUDING JQUERY-->
+	<script src= 
+"https://code.jquery.com/jquery-3.5.1.js"> 
+	</script>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+
+    <script>function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+
+
+      function search() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.querySelector('#list-holder');
+  x.innerHTML = ""
+
+  for (i = 0; i < data.length; i++) {
+    let obj = data[i];
+
+    if (obj.Name.toLowerCase().includes(input)) {
+      const elem = document.createElement("li")
+      elem.innerHTML = `${obj.title}`
+      x.appendChild(elem)
+    }
+  }
+}
+      </script>
+  
+    <header>
+        <nav>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a target="_blank" href="https://www.amazon.in/b?node=1389401031&amp;ref_=MH1_Smartphones&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=a3289382380fdab47a92cd8ffd27d402&camp=3638&creative=24630">Mobiles</a>                
+                <a target="_blank" href="https://www.amazon.in/b?node=1375424031&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=8e6f65aa03b95137ec91ffd45eeece86&camp=3638&creative=24630">Laptops</a>                
+                <a target="_blank" href="https://www.amazon.in/b/?node=1389396031&amp;ref_=Oct_d_odnav_d_1389375031_4&amp;pd_rd_w=kMJrp&amp;content-id=amzn1.sym.7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_p=7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_r=PCP7EE7AVJS1HC89EDHE&amp;pd_rd_wg=qNmqn&amp;pd_rd_r=86a05ad0-129e-4c0e-bf04-8b8de90e280f&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=fa1cef95c8f2ba7f9efcd50c6afd29c2&camp=3638&creative=24630">Televisions</a>               
+                <a target="_blank" href="https://www.amazon.in/b?node=1389402031&amp;ref_=MH1_Accessories&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=db8dd73047bc9b9fc5cfdf592af316d7&camp=3638&creative=24630">Accessories</a>              
+            </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+              </div>
+            <div class="logo">
+                <a href="#">SHOPro</a>
+            </div>
+            <div class="topnav" id="myTopnav">
+              <a href="#home" class="active">Home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <div class="dropdown">
+                <button class="dropbtn">Categories
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              <a href="#about">About</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." >
+                <button type="submit">Search</button>
+              </div>  
+        </nav>
+    </header>
+   
+    
+
+	<!-- CSS FOR STYLING THE PAGE -->
+	<style> 
+
+		table { 
+			margin: 0 auto; 
+			font-size: large; 
+			border: 1px solid black; 
+		} 
+
+
+		
+
+		td { 
+			background-color: #ffffff; 
+			border: 5px solid black; 
+		} 
+
+		th, 
+		td { 
+			font-weight: bold; 
+			border: 3px solid rgb(101, 119, 109); 
+			padding: 10px; 
+			text-align: center; 
+		} 
+
+		td { 
+			font-weight: lighter; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+  
+    
+	<section> 
+
+		<!-- TABLE CONSTRUCTION-->
+		<table id='table'> 
+			<!-- HEADING FORMATION -->
+			<tr> 
+				<th>Image</th> 
+        <th>Tittle</th>
+				<th>Price</th> 
+				<th>Rating</th> 
+        <th>URL</th>
+			</tr> 
+    
+            
+
+			<script> 
+				$(document).ready(function () { 
+
+					// FETCHING DATA FROM JSON FILE 
+					$.getJSON("amz.json", 
+							function (data) { 
+						var student = ''; 
+
+						// ITERATING THROUGH OBJECTS 
+						$.each(data, function (key, value) { 
+
+							//CONSTRUCTION OF ROWS HAVING 
+							// DATA FROM JSON OBJECT 
+							student += '<tr>'; 
+
+                            student += '<td><img src="'+
+                                value.image +'"></td>';
+							                            
+                            student += '<td>' + 
+								value.title + '</td>'; 
+                            
+							student += '<td>' + 
+								value.price + '</td>'; 
+
+							student += '<td>' + 
+								value.rating + '</td>'; 
+                            
+							student += `<td><a href="${value.url}">Buy Now<a/>` +
+								 '</td>'; 
+
+							student += '</tr>'; 
+						}); 
+						
+						//INSERTING ROWS INTO TABLE 
+						$('#table').append(student); 
+					}); 
+				}); 
+			</script> 
+	</section> 
+</body> 
+
+</html> 

@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>page2</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<!-- INCLUDING JQUERY-->
+<script src= 
+"https://code.jquery.com/jquery-3.5.1.js"> 
+	</script>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+
+
+    <script>function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+
+
+
+      function search() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.querySelector('#list-holder');
+  x.innerHTML = ""
+
+  for (i = 0; i < data.length; i++) {
+    let obj = data[i];
+
+    if (obj.Name.toLowerCase().includes(input)) {
+      const elem = document.createElement("li")
+      elem.innerHTML = `${obj.title}`
+      x.appendChild(elem)
+    }
+  }
+}
+      </script>
+</head>
+<body>
+    
+
+  <header>
+    <nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a target="_blank" href="https://www.amazon.in/b?node=1389401031&amp;ref_=MH1_Smartphones&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=a3289382380fdab47a92cd8ffd27d402&camp=3638&creative=24630">Mobiles</a>                
+            <a target="_blank" href="https://www.amazon.in/b?node=1375424031&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=8e6f65aa03b95137ec91ffd45eeece86&camp=3638&creative=24630">Laptops</a>                
+            <a target="_blank" href="https://www.amazon.in/b/?node=1389396031&amp;ref_=Oct_d_odnav_d_1389375031_4&amp;pd_rd_w=kMJrp&amp;content-id=amzn1.sym.7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_p=7913a1eb-33db-4a38-8b01-4c7c31f95733&amp;pf_rd_r=PCP7EE7AVJS1HC89EDHE&amp;pd_rd_wg=qNmqn&amp;pd_rd_r=86a05ad0-129e-4c0e-bf04-8b8de90e280f&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=fa1cef95c8f2ba7f9efcd50c6afd29c2&camp=3638&creative=24630">Televisions</a>               
+            <a target="_blank" href="https://www.amazon.in/b?node=1389402031&amp;ref_=MH1_Accessories&_encoding=UTF8&tag=shopro0f-21&linkCode=ur2&linkId=db8dd73047bc9b9fc5cfdf592af316d7&camp=3638&creative=24630">Accessories</a>              
+        </div>
+          
+          <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+          </div>
+        <div class="logo">
+
+            <a href="#">SHOPro</a>
+        </div>
+        <div class="topnav" id="myTopnav">
+          <a href="#home" class="active">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <div class="dropdown">
+            <button class="dropbtn">Categories
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <a href="#about">About</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." >
+            <button type="submit">Search</button>
+          </div>  
+    </nav>
+    
+</header>
+
+<h1><b>Mobiles</b></h1>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://yt3.googleusercontent.com/05lhMeAH6tZrPIUsp2yHNz3DwzhKbDUQcxcY0_qeXVyZttR_pktBzw0FcLUSR6D4fVqsEgL3ZO0=s900-c-k-c0x00ffffff-no-rj" alt="Sandwich" style="width:100%" onclick="window.open('apple.html','_blank')">
+      <h3>Apple<h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images.samsung.com/is/image/samsung/assets/in/about-us/brand/logo/mo/256_144_1.png?$512_N_PNG$" alt="Steak" style="width:100%" onclick="window.open('Samsung.html','_blank')">
+      <h3>Samsung</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://www.exchange4media.com/news-photo/103383-oneplus.jpg" alt="Cherries" style="width:100%" onclick="window.open('Testing.html','_blank')">
+      <h3>OnePlus</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://static.vecteezy.com/system/resources/previews/020/927/198/original/vivo-brand-logo-phone-symbol-name-white-design-chinese-mobile-illustration-with-black-background-free-vector.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Vivo</h3>
+    </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://static.vecteezy.com/system/resources/previews/020/190/680/original/oppo-logo-oppo-icon-free-free-vector.jpg" alt="Popsicle" style="width:100%">
+      <h3>Oppo</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://ww2.freelogovectors.net/wp-content/uploads/2023/05/realme-logo-freelogovectors.net_.png" alt="Salmon" style="width:100%">
+      <h3>Realme</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://static.vecteezy.com/system/resources/previews/020/927/146/non_2x/xiaomi-brand-logo-phone-symbol-with-name-white-design-chinese-mobile-illustration-with-orange-background-free-vector.jpg" alt="Sandwich" style="width:100%">
+      <h3>Xiomi </h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://download.logo.wine/logo/Redmi/Redmi-Logo.wine.png" alt="Croissant" style="width:100%">
+      <h3>Redmi</h3>
+      
+    </div>
+  </div>
+  
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/POCO_logo.svg/2560px-POCO_logo.svg.png" alt="Popsicle" style="width:100%">
+      <h3>Poco</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Nothing_Logo.webp/640px-Nothing_Logo.webp.png" alt="Salmon" style="width:100%">
+      <h3>Nothing</h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="https://logowik.com/content/uploads/images/511_motorola.jpg" alt="Sandwich" style="width:100%">
+      <h3>Motorola</h3>
+ 
+    </div>
+    <div class="w3-quarter">
+      <img src="data:image/png;base64,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" alt="Croissant" style="width:100%">
+      <h3>IQOO</h3>
+      
+    </div>
+  </div>
+
+  <!-- fourth Photo Grid-->
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="m14.webp" alt="Popsicle" style="width:100%">
+      <h3></h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="m15.webp" alt="Salmon" style="width:100%">
+      <h3></h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="m16.webp" alt="Sandwich" style="width:100%">
+      <h3></h3>
+      
+    </div>
+    <div class="w3-quarter">
+      <img src="m17.jpg" alt="Croissant" style="width:100%">
+      <h3></h3>
+      
+    </div>
+  </div>
+</div>
+
+  
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+</div>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

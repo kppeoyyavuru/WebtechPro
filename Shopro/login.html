@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: content-box;
+}
+
+.box {
+  float: left;
+  width: 40%;
+  padding: 60px;
+  height: 400px;
+  justify-content: space-evenly;
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #0f0d0d;
+}
+
+.close:hover,
+.close:focus {
+  color: #de0b0b;
+  cursor: pointer;
+}
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display:flex;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 93%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.container {
+  justify-content: space-evenly;
+  height:100%;
+  width: 100%;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <a href="homePage.html">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  </a>
+  <h1 style="text-align: center;">WELCOME TO SHOPro !</h1>
+<div class="clearfix">
+  <div class="box">
+    <img src="https://cdn.dribbble.com/users/2046015/screenshots/5973727/06-loader_telega.gif" alt="Avatar" class="avatar" >
+  </div>
+  <div class="box">
+    <form action="/action_page.php" method="post">  
+      <div class="container">
+        <h2 style="text-align: center;">Login</h2>
+        <label for="uname"><b>Username</b></label> 
+        <input type="text" placeholder="Enter Username" name="uname" required><br><br><br>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required><br><br><br>
+        
+        <button type="submit">Submit</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <p>You don't have an account? <a href="">Sign In</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
